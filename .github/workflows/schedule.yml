@@ -40,15 +40,15 @@ jobs:
   image-prepare:
     runs-on: ubuntu-22.04
     timeout-minutes: 30
-    name: Prepare kubeedge/build-tools image
+    name: Prepare lcr.loongnix.cn/kubeedge/build-tools image
     steps:
-      - name: Pull kubeedge/build-tools image
+      - name: Pull lcr.loongnix.cn/kubeedge/build-tools image
         run: |
-          docker pull kubeedge/build-tools:1.20.10-ke1
+          docker pull lcr.loongnix.cn/kubeedge/build-tools:1.20.10-ke1
           mkdir -p /home/runner/build-tools/
-          docker save kubeedge/build-tools:1.20.10-ke1 > /home/runner/build-tools/build-tools.tar
+          docker save lcr.loongnix.cn/kubeedge/build-tools:1.20.10-ke1 > /home/runner/build-tools/build-tools.tar
 
-      - name: Temporarily save kubeedge/build-tools image
+      - name: Temporarily save lcr.loongnix.cn/kubeedge/build-tools image
         uses: actions/upload-artifact@v3
         with:
           name: build-tools-docker-artifact
@@ -70,13 +70,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Retrieve saved kubeedge/build-tools image
+      - name: Retrieve saved lcr.loongnix.cn/kubeedge/build-tools image
         uses: actions/download-artifact@v3
         with:
           name: build-tools-docker-artifact
           path: /home/runner/build-tools
 
-      - name: docker load kubeedge/build-tools image
+      - name: docker load lcr.loongnix.cn/kubeedge/build-tools image
         run: |
           docker load < /home/runner/build-tools/build-tools.tar
 
@@ -130,13 +130,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Retrieve saved kubeedge/build-tools image
+      - name: Retrieve saved lcr.loongnix.cn/kubeedge/build-tools image
         uses: actions/download-artifact@v3
         with:
           name: build-tools-docker-artifact
           path: /home/runner/build-tools
 
-      - name: docker load kubeedge/build-tools image
+      - name: docker load lcr.loongnix.cn/kubeedge/build-tools image
         run: |
           docker load < /home/runner/build-tools/build-tools.tar
 

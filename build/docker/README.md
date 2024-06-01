@@ -1,9 +1,9 @@
 Now this directory contains images below, they all use the docker buildx to build multi-architecture docker images.
 
-- `kubeedge/build-tools`
+- `lcr.loongnix.cn/kubeedge/build-tools`
   
   It's used to build KubeEdge project, and the dependencies for building KubeEdge will be packaged into this image. 
-  You can use [make-build-tools.sh](./build-tools/make-build-tools.sh) to build `kubeedge/build-tools` image.
+  You can use [make-build-tools.sh](./build-tools/make-build-tools.sh) to build `lcr.loongnix.cn/kubeedge/build-tools` image.
 	
 - `kubeedge/installation-package`
 

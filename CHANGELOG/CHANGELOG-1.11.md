@@ -166,7 +166,7 @@ If you want to use keadm to deploy the KubeEdge v1.11.0, please note that the ke
 - use unified image management ([#3720](https://github.com/kubeedge/kubeedge/pull/3720), [@zc2638](https://github.com/zc2638))
 - Use armhf as default for armv7/v6 ([#3723](https://github.com/kubeedge/kubeedge/pull/3723), [@fisherxu](https://github.com/fisherxu))
 - add ErrStatus in api-server application ([#3742](https://github.com/kubeedge/kubeedge/pull/3742), [@Shelley-BaoYue](https://github.com/Shelley-BaoYue))
-- support compile binaries with kubeedge/build-tools image ([#3756](https://github.com/kubeedge/kubeedge/pull/3756), [@gy95](https://github.com/gy95))
+- support compile binaries with lcr.loongnix.cn/kubeedge/build-tools image ([#3756](https://github.com/kubeedge/kubeedge/pull/3756), [@gy95](https://github.com/gy95))
 - add min TLS version for stream server ([#3764](https://github.com/kubeedge/kubeedge/pull/3764), [@snstaberah](https://github.com/snstaberah))
 - Adding security policy ([#3778](https://github.com/kubeedge/kubeedge/pull/3778), [@vincentgoat](https://github.com/vincentgoat))
 - chart: add cert domain config in helm chart ([#3802](https://github.com/kubeedge/kubeedge/pull/3802), [@lwabish](https://github.com/lwabish))

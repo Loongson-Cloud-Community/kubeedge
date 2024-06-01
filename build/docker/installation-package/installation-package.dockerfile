@@ -1,4 +1,4 @@
-FROM kubeedge/build-tools:1.20.10-ke1 as builder
+FROM lcr.loongnix.cn/kubeedge/build-tools:1.20.10-ke1 as builder
 WORKDIR /work
 ADD . .
 RUN mkdir -p bin && \

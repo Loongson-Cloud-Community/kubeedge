@@ -2,7 +2,7 @@
 
 set -e
 
-REPOSITORY=${REPOSITORY:-"kubeedge/build-tools"}
+REPOSITORY=${REPOSITORY:-"lcr.loongnix.cn/kubeedge/build-tools"}
 # image tag for build-tools image, including golang version and build-tools version
 # If there's some modifications for build-tools.dockerfile other than golang version, the build-tools version should be updated e.g. ke1, ke2.
 # If the golang version is updated in build-tools.dockerfile, the build-tools version should be started from ke1.
